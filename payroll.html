@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Group Members 1)Nathnael Damte 2)Marcus Anderson-->
+  <title>Payroll Report</title>
+  <meta charset="UTF-8">
+  <script src="payroll.js"></script>
+  <style>
+    
+    table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  th {
+    text-align: left;
+    padding-right : 20px;
+  }
+    
+    .btn{
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2> <a href="index.html"> Go to Question 2 </a> </h2>
+  <h1>Payroll Report</h1>
+  <p> Click on the generate report button to enter the work hours and generate a payroll of each employee.</p>
+  <button class="btn" onclick="processPayroll()">Generate Report</button>
+
+  <table id="payrollTable">
+    <thead>
+      <tr>
+        <th>Emp#</th>
+        <th>Hours </th>
+        <th>Weekly Pay </th>
+      </tr>
+    </thead>
+    <tbody> </tbody>
+  </table>
+
+  <p id="totalPay"></p>
+</body>
+</html>
